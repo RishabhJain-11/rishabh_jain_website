@@ -23,17 +23,17 @@ export const singleProjectData = {
 	ProjectImages: [
 		{
 			id: 1,
-			title: 'Kabul Project Management UI',
+			title: 'Rishabh Project Management UI',
 			img: Image1,
 		},
 		{
 			id: 2,
-			title: 'Kabul Project Management UI',
+			title: 'Rishabh Project Management UI',
 			img: Image2,
 		},
 		{
 			id: 3,
-			title: 'Kabul Project Management UI',
+			title: 'Rishabh Project Management UI',
 			img: Image3,
 		},
 	],

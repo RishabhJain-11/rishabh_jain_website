@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
+// import HireMeModal from '../HireMeModal';
+// import logoLight from '../../images/logo-light.svg';
+// import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -175,7 +175,7 @@ const AppHeader = () => {
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					<div className="hidden md:flex">
+					{/* <div className="hidden md:flex">
 						<span
 							onClick={showHireMeModal}
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
@@ -183,7 +183,7 @@ const AppHeader = () => {
 						>
 							<Button title="Hire Me" />
 						</span>
-					</div>
+					</div> */}
 
 					{/* Theme switcher large screen */}
 					<div
@@ -198,16 +198,6 @@ const AppHeader = () => {
 						)}
 					</div>
 				</div>
-			</div>
-			{/* Hire me modal */}
-			<div>
-				{showModal ? (
-					<HireMeModal
-						onClose={showHireMeModal}
-						onRequest={showHireMeModal}
-					/>
-				) : null}
-				{showModal ? showHireMeModal : null}
 			</div>
 		</motion.nav>
 	);

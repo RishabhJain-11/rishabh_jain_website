@@ -1,37 +1,25 @@
 import {
 	FiGithub,
 	FiTwitter,
-	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
+	FiLinkedin
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: '/',
+		icon: <FiGithub />,
+		url: 'https://github.com/RishabhJain-11',
 	},
 	{
 		id: 2,
-		icon: <FiGithub />,
-		url: 'https://github.com/RishabhJain-11',
+		icon: <FiLinkedin />,
+		url: 'https://www.linkedin.com/in/rishabhjaincodes',
 	},
 	{
 		id: 3,
 		icon: <FiTwitter />,
 		url: 'https://twitter.com/jainRishabhTwt',
-	},
-	{
-		id: 4,
-		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/rishabhjaincodes',
-	},
-	{
-		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/rishabhjain',
 	},
 ];
 
@@ -42,7 +30,7 @@ const AppFooter = () => {
 				{/* Footer social links */}
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
 					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-						Follow me
+						Follow me on
 					</p>
 					<ul className="flex gap-4 sm:gap-8">
 						{socialLinks.map((link) => (
